@@ -7,11 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --config webpack.config.js",
     "build": "webpack build --config webpack.config.prod.js",
-    "back": "npm run tailwind && webpack --mode production",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "tailwind": "npx tailwindcss -i ./src/style.css -o ./src/app.css",
-    "tailwind:watch": "npx tailwindcss -i ./src/style.css -o ./src/app.css --watch"
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "j-Riv <jriv@suavecito.com>",

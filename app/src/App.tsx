@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { CodeSnippet, Loading } from './components/index';
 import { fetchAPI } from './lib/utils';
 import type { Payload, Response } from './lib/types';
+import { endpoint } from './lib/const';
 
 import './style.css';
 
@@ -14,7 +15,7 @@ function App() {
     try {
       setIsLoading(true);
 
-      const response = await fetchAPI<Payload, Response>({
+      const response = await fetchAPI<Payload, Response>(endpoint, {
         sku: 'P001NN',
       });
 
